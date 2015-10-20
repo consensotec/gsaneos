@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" android:orientation="vertical">
+  
+  <TextView android:text="@string/str_progress_os" android:layout_width="fill_parent" android:layout_height="wrap_content"></TextView>
+  <ProgressBar android:id="@+id/barraProgressoOS" android:layout_width="fill_parent" android:layout_height="40px" style="?android:attr/progressBarStyleHorizontal" android:max="100"/>
+
+  <TextView android:text="@string/str_progress_fotos" android:layout_width="fill_parent" android:layout_height="wrap_content"></TextView>
+  <ProgressBar android:id="@+id/barraProgressoFotos" android:layout_width="fill_parent" android:layout_height="40px" style="?android:attr/progressBarStyleHorizontal" android:max="100"/>
+  
+  <!-- <LinearLayout android:orientation="horizontal" android:gravity="right" android:layout_width="fill_parent" android:layout_height="fill_parent">
+  	<Button android:text="@string/str_bt_continuar" android:id="@+id/btnContunuar" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+  	<Button android:text="@string/str_bt_pausar"  android:id="@+id/btnPausar" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+  	<Button android:text="@string/str_bt_cancelar" android:id="@+id/btnCancelar" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+  </LinearLayout> -->
+  
+    
+</LinearLayout>

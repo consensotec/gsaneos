@@ -1,0 +1,283 @@
+<resources>
+	
+    <string name="app_name">GSANEOS</string>
+    <string name="nomeAplicacao">Acompanhamento de O.S. de Cobrança</string>
+    
+	<string name="db_erro">Erro ao acessar o banco de dados</string>
+	<string name="erro_excecao">Ocorreu um erro, tente novamente</string>
+	<string name="db_erro_inserir_registro">Erro ao inserir o registro</string>
+	<string name="db_erro_deletar_registro">Erro ao apagar o registro</string>
+	<string name="db_erro_pesquisar_registro">Erro ao consultar o registro</string>
+
+	
+	
+	<!-- Geral -->	
+	<string name="str_sim">Sim</string>
+	<string name="str_nao">Não</string>
+	<string name="str_geral_bt_cancela">Cancelar</string>
+	<string name="str_geral_bt_confirmar">Confirmar</string>
+	<string name="str_ativar">Ativar</string>
+	<string name="str_desativadar">Desativar</string>
+	<string name="str_ok">OK</string>
+	<string name="str_carregar">Carregar</string>
+	<string name="str_sair">Sair</string>
+	<string name="str_qtd">Qtd:</string>
+	<string name="str_data">Data:</string>
+	<string name="str_ordem">Ordem:</string>
+	<string name="str_OS">OS:</string>
+	
+	
+	<!-- LoginActivity -->
+	<string name="str_login_user">Login</string>
+	<string name="str_login_pass">Senha</string>
+	<string name="str_login_login">Efetuar Login</string>
+	<string name="erro_preenchimento_login">Informe o login</string>
+	<string name="erro_preenchimento_senha">Informe a senha</string>
+	<string name="erro_usuario_senha_incorreto">Login e/ou senha incorreto(s)</string>
+	<string name="erro_imei_invalido">O IMEI do arquivo é diferente do celular</string>
+	<string name="erro_identificacao_invalida">O IMEI/MAC do arquivo é diferente do dispositivo móvel</string>
+	
+	<!-- SelecionarArquivoActivity -->
+	<string name="str_file_selector_title">Arquivos offline disponíveis</string>
+	<string name="str_not_file_to_upload">Nenhum arquivo para carregar</string>
+	<string name="error_carregar_arquivo">Erro ao carregar arquivo</string>
+	<string name="str_conexao_falha_transferir_offline">Não foi possível conectar ao servidor GSAN.
+		Encaminhando para trabalho OFFLINE
+	</string>
+
+	<string name="str_file_selector_loading">Carregando arquivo OFFLINE</string>
+	<string name="lbl_downloading_file">Carregando arquivo on-line. Por favor, aguarde!</string>
+	<string name="error_no_files_found">Nenhum arquivo encontrado</string>
+	<string name="lbl_loading_file">Carregando...</string>
+
+	<string name="data_atual_confirmar">A data atual é %1$s. Confirma? </string>
+	
+	<!-- apresentar_roteiros_activity.xml -->
+	<string name="string_roteiro">Roteiro</string>
+	<string name="string_ordem">Ordem</string>
+	<string name="string_endereco">Endereço</string>
+	<string name="string_finalizar_roteiro">Finalizar Roteiro</string>
+	<!-- apresentar_roteiros_adapter_row.xml -->
+	<string name="nomeImagem">Imagem</string>
+	<string name="erro_verificar_sit_os">A ordem de serviço selecionada já foi finalizada</string>
+
+	<!-- Apresentar roteiro tabs -->
+	<string name="menu_photos">Fotos</string>
+	<string name="str_tipo_servico">Tipo de Serviço:</string>
+	<string name="label_qtd">Qtd:</string>
+	<string name="label_data">Data:</string>
+	<string name="label_ordem">Ordem:</string>
+	<string name="label_OS">OS:</string>
+	<string name="str_imovel">Imóvel</string>
+	<string name="str_cliente">Cliente</string>
+	<string name="str_debitos">Débitos</string>
+	<string name="str_os">OS</string>
+	<string name="str_informacoes_iniciais">Informações Iniciais</string>
+	<string name="label_inscricao">Inscrição:</string>
+	<string name="label_matricula">Matrícula:</string>
+	<string name="label_perfil">Perfil:</string>
+	<string name="label_num_economias">Número de Economias:</string>
+	<string name="label_categoria">Categoria:</string>
+	<string name="label_grupo">Grupo:</string>
+	<string name="str_endereco">Endereço</string>
+	<string name="str_ligacao_agua">Ligação de Água</string>
+	<string name="str_ligacao_esgoto">Ligação de Esgoto</string>
+	<string name="label_situacao">Situação:</string>
+	<string name="label_consumo_medio">Consumo Médio:</string>
+	<string name="str_hidrometro">Hidrômetro</string>
+	<string name="label_numero">Número:</string>
+	<string name="label_marca">Marca:</string>
+	<string name="label_local_inst">Local Inst.:</string>
+	<string name="label_protecao">Proteção:</string>
+	<string name="label_ultima_alteracao">Última Alteração:</string>
+	
+	<!-- manter_dados_aba_cliente_visualizar_activity.xml -->
+	<!-- manter_dados_aba_cliente_alterar_activity.xml -->
+ 	<string name="string__cliente">Nome:</string>
+ 	<string name="string_cpf_cnpf">CPF/CNPJ:</string> 
+ 	<string name="string_rg">RG:</string> 
+ 	<string name="string_orgao_expedidor">Orgão Expedidor:</string> 
+ 	<string name="string_uf">UF:</string> 
+ 	<string name="string_telefone">Telefone:</string> 
+ 	<string name="string_ramal">Ramal:</string> 
+ 	<string name="string_atualizar_cliente">Atualizar Cliente</string> 
+ 	<string name="erro_verificar_nome_cliente">O nome do cliente deve ser informado.</string>
+ 	<string name="erro_verificar_cpf_cnpj">O CPF/CNPJ deve ser informado.</string>
+ 	<string name="erro_verificar_rg">O RG deve ser informado.</string>
+ 	<string name="erro_verificar_ddd">O Número do DDD deve ser informado.</string>
+ 	<string name="erro_verificar_telefone">O Número do Telefone deve ser informado.</string>
+ 	<string name="erro_verifica_ddd_81_87">O Número do DDD deve ser 81 ou 87.</string>
+ 	<string name="erro_verifica_telefone_quantidade_digito">Informe o Número do Telefone válido.</string>
+ 	<string name="erro_verificar_cpf_cnpj_valido_quantidade">Informe um CPF ou CNPJ válido</string>
+ 	
+ 	<string name="str_progress_os">Enviando Ordens de Serviço</string>
+ 	<string name="str_progress_os_unica">Enviando Ordem de Serviço</string>
+ 	<string name="label_enviando">Enviando...</string>
+ 	<string name="label_enviando_OS">Enviando OS</string>
+	<string name="str_progress_fotos">Enviando Fotos</string>
+	<string name="str_bt_continuar">Continuar</string>
+	<string name="str_bt_pausar">Pausar</string>
+	<string name="str_bt_cancelar">Cancelar</string>
+	
+	<!-- Foto Tipo -->
+	<string name="str_foto_tipo_antes_execucao">Antes da Execução</string>
+	<string name="str_foto_tipo_durante_execucao">Durante a Execução</string>
+	<string name="str_foto_tipo_apos_execucao">Após a Execução</string>
+	<string name="str_foto_tipo_fachada_imovel">Fachada do Imóvel</string>
+	
+
+ 	<!-- Banco de Dados -->
+    <string name="db_error">Erro ao acessar o banco de dados</string>
+    <string name="db_error_insert_record">Erro ao Inserir o registro</string>
+    <string name="db_error_delete_record">Erro ao apagar o registro</string>
+    <string name="db_error_search_record">Erro ao consultar o registro</string>
+    
+    <!-- Server -->
+    <string name="servidor_fora_do_ar">Servidor fora do ar</string>
+    <string name="conexao_falhou">Não foi possível conectar ao servidor GSAN.
+		Encaminhando para trabalho OFFLINE</string>
+    <string name="conexao_servidor_gsan">Conectando com o servidor GSAN.</string>
+    <string name="validando_versao">Validando versão do sistema. Por favor, aguarde!</string>
+    <string name="str_alert_download_title"> Download de nova versão</string>
+    <string name="str_download_alert_file">Erro ao carregar arquivo</string>
+    <string name="str_download_servidor_offline">Servidor offline</string>
+    <string name="str_error_aborted">Você é obrigado a baixar e instalar a versão</string>   
+    <string name="str_alert_download_download_error"> Não há nova versão disponível.</string>  
+    <string name="str_alert_verificar_versao_erro">Houve um erro ao baixar o arquivo.</string>
+    <string name="str_alert_download_apk_erro">Houve um erro ao verificar se há nova versão.</string>
+    <string name="str_download_progress_titulo">Carregando o arquivo. Por favor, aguarde&#8230;</string>
+    <string name="str_download_erro_problema_desconhecido">Houve um problema desconhecido carregar os dados. Encaminhando para carregamento OFFLINE</string>
+    <string name="str_error_download">Houve um problema ao baixar o arquivo. Encaminhando para carregamento OFFLINE</string>
+    <string name="str_error_laoding">Houve um problema ao carregar o arquivo. Encaminhando para carregamento OFFLINE</string>
+    <string name="str_error_off">O aparelho está sem sinal ou o servidor está OFFLINE. Tente de novo.</string>
+    <string name="error_ao_carregar_arquivo">Erro ao carregar arquivo</string>
+    <string name="str_menu_exportar_bd_legenda">Exportar BD</string>
+    
+    <string name="sim">Sim</string>
+    <string name="str_alert_exportar_bd">Base de Dados exportada com sucesso!</string>
+    <!-- Manter Dados OS -->
+	<string name="string_encerrar_os">Encerrar OS</string>
+	<string name="string_motivo_encerramento">Motivo do Encerramento:</string>
+	<string name="string_data_execucao">Data da Execução:</string>
+	<string name="string_hora_execucao">Hora da Execução:</string>
+	<string name="string_parecer">Parecer:</string>
+	<string name="alert_fotos_devem_ser_informadas">As fotos devem ser informadas.</string>
+	
+	<!-- Manter Dados OS Spressão -->
+	<string name="string_motivo_supr">Motivo da Supressão:</string>
+	<string name="string_tipo_supr">Tipo da Supressão:</string>
+	<string name="string_leitura_supr">Leitura da Supressão:</string>
+	<string name="string_num_selo_supr">Número do Selo da Supressão:</string>
+	<string name="string_ic_permanencia_hidr">Indicador de Permanência Hidrômetro:</string>
+	<string name="alert_motivo_supressao_nao_informado">O motivo da supressão deve ser informado.</string>
+	<string name="alert_tipo_supressao_nao_informado">O tipo da supressão deve ser informado.</string>
+	<string name="alert_motivo_encerramento_nao_informado">O motivo do encerramento deve ser informado.</string>
+	
+	<!-- manter_dados_aba_corte_activity.xml -->
+	<string name="string_motivo_corte">Motivo do Corte:</string>
+	<string name="string_tipo_corte">Tipo do Corte:</string>
+	<string name="string_leitura_corte">Leitura do Corte:</string>
+	<string name="string_numero_selo_corte">Número do Selo do Corte:</string>
+	<string name="string_motivo_encerramento_corte">Motivo Encerramento:</string>
+	<string name="string_data_execucao_corte">Data da Execução:</string>
+	<string name="string_hora_execucao_corte">Hora da Execução:</string>
+	<string name="string_botao_encerrar_os_corte">Encerrar OS</string>
+	<string name="string_parecer_corte">Parecer:</string>
+	<string name="erro_verificar_motivo_corte">O motivo de corte deve ser informado.</string>
+	<string name="erro_verificar_tipo_corte">O tipo do corte deve ser informado.</string>
+	<string name="erro_verificar_motivo_encerramento">O motivo do encerramento deve ser informado.</string>
+	
+	<!-- manter_dados_aba_religacao_activity.xml -->
+    <string name="string_motivo_encerramento_religacao">Motivo do Encerramento:</string>
+    <string name="string_data_execucao_religacao">Data da Execução:</string>
+    <string name="string_hora_execucao_religacao">Hora da Execução:</string>
+    <string name="string_botao_encerrar_os_religacao">Encerrar OS</string>
+    
+    <!-- manter_dados_aba_restabelecimento_activity.xml -->	
+    <string name="string_motivo_encerramento_restabelecimento">Motivo do Encerramento:</string>
+    <string name="string_data_execucao_restabelecimento">Data da Execução:</string>
+    <string name="string_hora_execucao_restabelecimento">Hora da Execução:</string>
+    <string name="string_botao_encerrar_os_restabelecimento">Encerrar OS</string>
+    <string name="erro_verificar_foto_informada">As fotos devem ser informadas.</string>
+
+    <!-- manter_dados_aba_remocao_hidrometro_activity.xml -->	
+    <string name="str_com">COM</string>
+    <string name="str_sem">SEM</string>
+    <string name="erro_motivo_nao_informado">O Motivo do Encerramento deve ser informado</string>
+    <string name="erro_local_inst_hidr_nao_informado">O Local de Instalação deve ser informado</string>
+    <string name="erro_protecao_hidr_nao_informada">A Proteção do Hidrômetro deve ser informada</string>
+    
+    
+    <string name="str_rota_encerrada">Rota Encerrada</string>
+    <string name="msg_rota_encerrada">Todos os dados foram enviados ao GSAN. Carregar proxima rota?</string>
+    <string name="msg_problemas_encerramento_rota">Problemas ao encerrar</string>
+    <string name="msg_gerar_offline_concluido">O arquivo foi gerado no cartão de memória, localizado na pasta gsaneos/Retorno</string>
+
+	
+    <!-- manter_dados_aba_fiscalizacao_activity.xml -->
+    <string name="string_situacao_encontrada_fiscalizacao">Situação Encontrada:</string>
+    <string name="string_documento_entregue_fiscalizacao">Documento Entregue:</string>
+	<string name="string_motivo_encerramento_fiscalizacao">Motivo Encerramento:</string>
+	<string name="string_data_execucao_fiscalizacao">Data da Execução:</string>
+	<string name="string_hora_execucao_fiscalizacao">Hora da Execução:</string>
+	<string name="string_parecer_fiscalizacao">Parecer:</string>
+	<string name="string_botao_encerrar_os_fiscalizacao">Encerrar OS</string>
+	<string name="erro_verificar_situacao_encontrada_fiscalizacao">Deve ser informado pelo menos uma Situação de Fiscalização</string>
+	<string name="erro_verificar_documento_entregue_fiscalizacao">O documento entregue deve ser informado.</string>
+	<string name="erro_verificar_motivo_encerramento_fiscalizacao">O motivo de encerramento deve ser informado.</string>
+	
+	<string name="removido_sucesso">removido com sucesso</string>
+	<string name="alert_not_add_nenhuma">Para a ação ser NENHUMA é necessário remover as outras ações.</string>
+	<string name="alert_not_add_because_nenhuma">Para adicionar essa ação, é necessário remover a ação NENHUMA.</string>
+	<string name="error_action_already_selected">Esta ação já foi adicionada!</string>
+	
+	<string name="erro_verificar_orgao_expedidor">O Órgão Expedidor deve ser selecionado.</string>
+	<string name="erro_verificar_uf">A Unidade de Federação deve ser selecionada.</string>
+	<string name="string_situacoes_encontradas">Situações Encontradas</string>
+	<string name="str_operacao_cancelada">Operação cancelada</string>
+	
+	<string name="msg_problemas_transmitir_os">Problemas ao transmitir</string>
+
+	<!-- apresentar_dados_aba_debitos_activity.xml -->
+	<string name="str_documento_de_cobranca">Documento de Cobrança</string>
+	<string name="str_contas">Contas:</string>
+	<string name="str_mes_ano">Mês/Ano</string>
+	<string name="str_vencimento">Vencimento</string>
+	<string name="str_situacao">Situação</string>	
+	<string name="str_valor_conta">Vl. Conta</string>	
+	<string name="str_total">Total</string>
+	<string name="valor_total_contas">Total:  %1$s</string>	
+	
+	<!-- manter_dados_aba_substituicao_hidrometro_activity.xml -->
+	<string name="string_dados_atuais_hidrometro">Dados Atuais do Hidrômetro:</string>
+	<string name="string_dados_novo_hidrometro">Dados do Novo Hidrômetro:</string>
+	<string name="string_tipo_hidrometro">Tipo do Hidrômetro:</string>
+	<string name="string_numero_hidrometro">Número do Hidrômetro:</string>
+	<string name="string_tipo_medicao">Tipo de Medição:</string>
+	<string name="string_numero_leitura">Número da Leitura:</string>
+	<string name="string_situacao_hidrometro">Situação do Hidrômetro:</string>
+	<string name="string_local_armazenagem">Local Armazanagem:</string>
+	<string name="string_local_instalacao">Local de Instalação:</string>
+	<string name="string_tipo_hidrometro_novo">Tipo do Hidrômetro Novo:</string>
+	<string name="string_protecao">Proteção:</string>
+	<string name="string_cavalete">Cavalete:</string>
+	<string name="string_com">COM</string>
+	<string name="string_sem">SEM</string>
+	<string name="alerta_numero_leitura_nao_informado">O Número da Leitura deve ser informado.</string>
+	<string name="alerta_situacao_hidrometro_nao_informado">A Situação do Hidrômetro deve ser informada.</string>
+	<string name="alerta_situacao_hidrometro_instalado">Informe uma situação válida p/ o hidrômetro substituído.</string>
+	<string name="alerta_local_armazenagem_nao_informado">O Local de Armazenagem deve ser informado.</string>
+	<string name="alerta_tipo_hidrometro_nao_informado">O Tipo do Hidrômetro Novo deve ser informado.</string>
+	<string name="alerta_numero_hidrometro_novo_nao_informado">O Número do Hidrômetro Novo deve ser informado.</string>
+	<string name="string_micromedidor">Micromedidor</string>
+	<string name="string_macromedidor">Macromedidor</string>
+	<string name="string_tombamento_hidrometro">Tombamento do Hidrômetro:</string>	
+	<string name="string_leitura_instalacao">Leitura Instalação:</string>
+	<string name="string_numero_selo">Número do Selo:</string>
+	<!-- manter_dados_aba_instalacao_caixa_protecao_activity.xml -->
+	<string name="string_troca_protecao">Troca Proteção:</string>
+	<string name="string_troca_registro">Troca de Registro:</string>
+	<string name="string_local_instalacao_nao_informado">O Local de Instalação deve ser informado.</string>
+	<string name="string_protecao_hidrometro_nao_informado">A Proteção do Hidrômetro deve ser informada.</string>
+	
+</resources>

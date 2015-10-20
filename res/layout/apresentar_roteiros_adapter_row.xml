@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		     android:layout_width="match_parent"
+		     android:layout_height="match_parent"
+		     android:shrinkColumns="2">    
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="15dip"
+        android:paddingBottom="15dip">
+		<ImageView
+		     android:contentDescription="@string/nomeImagem"
+		     android:layout_width="wrap_content" 
+		     android:layout_height="wrap_content"
+		     android:paddingLeft="5dip"
+		     android:id="@+id/imagemSituacao"/>
+        <TextView
+             android:id="@+id/ordem"
+             android:layout_width="wrap_content" 
+		     android:layout_height="wrap_content"
+             android:paddingLeft="17dip" />
+        <TextView 
+            android:id="@+id/endereco" 
+            android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content"
+            android:paddingLeft="23dip" />
+    </TableRow>    
+</TableLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			 android:layout_width="match_parent"
+			 android:layout_height="match_parent"
+			 android:shrinkColumns="3">
+			  <TableLayout 
+				 android:layout_width="match_parent"
+			     android:layout_height="wrap_content"
+				 android:background="#353535"
+				 android:stretchColumns="1">
+				<TableRow
+				     android:background="#353535"
+				     android:paddingTop="4dp">
+					<TextView android:textColor="#ffffff"  
+								android:paddingTop="4dp" 
+							    android:layout_marginRight="1dp"  
+							    android:text="@string/string_roteiro" 
+							    android:background="#353535" 
+							    android:layout_gravity="left" 
+							    android:textStyle="bold"/>
+					</TableRow>
+			  </TableLayout>
+			  <TableRow
+			     android:layout_marginTop="5dp"
+			     android:background="#FFFFFF"
+			     android:layout_height="15dp">
+				<TextView android:width="25dip" />
+				<TextView
+				     android:text="@string/string_ordem"
+				     android:padding="1dip" 
+				     android:textColor="#000000" />
+				<TextView 
+				    android:text="@string/string_endereco"
+				    android:paddingLeft="7dip"
+				    android:textColor="#000000" />
+			  </TableRow>
+		<ListView
+		     android:id="@+id/listaOrdemServicoOs"
+		     android:layout_width="match_parent"
+			 android:layout_height="match_parent" />
+</TableLayout>
+
+

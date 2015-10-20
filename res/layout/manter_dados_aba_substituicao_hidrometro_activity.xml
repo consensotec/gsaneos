@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:orientation="vertical"
+        android:id="@+id/layoutGeralSubstituicaoHidrometro">
+        
+        <TextView 
+    	    style="@style/label"
+    	    android:id="@+id/dadosAtuaisHidrometro"
+    	    android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="55dp"
+            android:layout_marginBottom="5dp"
+            android:background="#808080"
+            android:text="@string/string_dados_atuais_hidrometro"/>
+        
+         <TextView 
+    	    style="@style/label"
+    	    android:id="@+id/tipoHidrometroText"
+    	    android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/string_tipo_hidrometro"/>
+          <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+          	android:inputType="number"
+            android:id="@+id/tipoHidrometroAtual"/>
+          
+          
+         <TextView 
+    	    style="@style/label"
+    	    android:id="@+id/numeroHidrometroText"
+    	    android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/string_numero_hidrometro"/>
+         
+          <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+          	android:inputType="text"
+            android:id="@+id/numeroHidrometroAtual"/>
+          
+          <TextView 
+    	    style="@style/label"
+    	    android:id="@+id/tipoMedicaoText"
+    	    android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/string_tipo_medicao"/>
+          
+          <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+          	android:inputType="number"
+            android:id="@+id/tipoMedicaoAtual"/>
+          
+           <TextView 
+    	    style="@style/label"
+    	    android:id="@+id/numeroLeituraText"
+    	    android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/string_numero_leitura"/>
+          
+          <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+          	android:inputType="number"
+            android:id="@+id/numeroLeituraAtual"/>
+          
+           <TextView 
+    	    style="@style/label"
+    	    android:id="@+id/situacaoHidrometroText"
+    	    android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/string_situacao_hidrometro"/>
+          
+          <Spinner 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/situacaoHidrometroAtual"/>
+          
+           <TextView 
+    	    style="@style/label"
+    	    android:id="@+id/localArmazenagemText"
+    	    android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/string_local_armazenagem"/>
+          
+          <Spinner 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/localArmazenagemAtual"/>
+          
+          <TextView 
+    	    style="@style/label"
+    	    android:id="@+id/dadosHidrometroNovoText"
+    	    android:layout_marginTop="8dp"
+    	    android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="55dp"
+            android:layout_marginBottom="5dp"
+            android:background="#808080"
+            android:text="@string/string_dados_novo_hidrometro"/>
+          
+          <TextView 
+	    	    style="@style/label"
+	    	    android:id="@+id/tipoHidrometroNovoText"
+	    	    android:textSize="15sp"
+            	android:textStyle="bold"
+	    	    android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:paddingTop="15dp"
+	            android:paddingLeft="5dp"
+	            android:layout_marginBottom="5dp"
+	            android:text="@string/string_tipo_hidrometro"/>
+      
+         		 <RadioGroup
+		            android:id="@+id/grupoTipoHidrometroNovo"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:orientation="horizontal">
+			 
+			        <RadioButton
+			            android:id="@+id/micromedidor"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="@string/string_micromedidor"
+			            android:checked="true"
+			            android:onClick="onRadioButtonClicked"/>
+			 
+			        <RadioButton
+			            android:id="@+id/macromedidor"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="@string/string_macromedidor"
+			            android:onClick="onRadioButtonClicked"/>
+		 
+		   		 </RadioGroup>
+              
+          <TextView 
+    	    style="@style/label"
+    	    android:id="@+id/numeroHidrometroNovoText"
+    	    android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/string_numero_hidrometro"/>
+         
+          <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/numeroHidrometroNovo"/>
+          
+          <TextView 
+    	    style="@style/label"
+    	    android:id="@+id/localInstalacaoText"
+    	    android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/string_local_instalacao"/>
+          
+          <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:id="@+id/localInstalacaoNovo"/>
+          
+          <TextView 
+    	    style="@style/label"
+    	    android:id="@+id/protecaoText"
+    	    android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/string_protecao"/>
+          
+          <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:id="@+id/protecaoNovo"/>
+          
+          <TextView 
+    	    style="@style/label"
+    	    android:id="@+id/leituraInstalacaoNovoText"
+    	    android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/string_leitura_instalacao"/>
+          
+          <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/leituraInstalacaoNovo"/>
+          
+          <TextView 
+    	    style="@style/label"
+    	    android:id="@+id/numeroSeloNovoText"
+    	    android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/string_numero_selo"/>
+          
+          <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/numeroSeloNovo"/>
+          
+          <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:paddingTop="5dp"
+	        android:paddingLeft="3dp"
+	        android:orientation="horizontal">
+	        
+              <TextView 
+	    	    style="@style/label"
+	    	    android:id="@+id/cavaleteText"
+	    	    android:textSize="15sp"
+            	android:textStyle="bold"
+	    	    android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:paddingTop="15dp"
+	            android:paddingLeft="5dp"
+	            android:layout_marginBottom="5dp"
+	            android:text="@string/string_cavalete"/>
+              
+		        <RadioGroup
+		            android:id="@+id/grupoCavaleteNovo"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:paddingLeft="30dp"
+		            android:orientation="horizontal">
+			 
+			        <RadioButton
+			            android:id="@+id/com"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="@string/string_com"/>
+			 
+			        <RadioButton
+			            android:id="@+id/sem"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="@string/string_sem"
+						android:checked="true"/>
+		 
+		   		 </RadioGroup>
+              
+          </LinearLayout>
+          
+          <TextView 
+    	    style="@style/label"
+    	    android:id="@+id/motivoEncerramentoText"
+    	    android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/string_motivo_encerramento"/>
+          
+          <Spinner 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/atendimentoMotivoEncerramentoNovo"/>
+          
+          <LinearLayout 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+	         <TextView 
+	    	    style="@style/label"
+	    	    android:textSize="15sp"
+	            android:textStyle="bold"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:paddingLeft="5dp"
+	            android:layout_marginBottom="5dp"
+	            android:text="@string/string_data_execucao"/>
+			<TextView
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:id="@+id/dataExecucaoSubstituicaoHidrometro"/>
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+         <TextView 
+    	    style="@style/label"
+    	    android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/string_hora_execucao"/>
+         <TextView 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/horaExecucaoSubstituicaoHidrometro"/>   
+        </LinearLayout> 
+         
+         <TextView 
+    	    style="@style/label"
+    	    android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/string_parecer_corte"/>
+         <EditText
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:inputType="textMultiLine"
+             android:lines="4"
+             android:id="@+id/parecerSubstituicao"/> 
+             
+         <Button 
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="3dp"
+             android:text="@string/string_botao_encerrar_os_corte"
+             android:id="@+botao/encerrarOSSubstituicaoHidrometro"/>
+        
+    </LinearLayout>
+</ScrollView>

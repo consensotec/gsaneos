@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="15dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:orientation="vertical">
+         
+        <TextView 
+    	    style="@style/label"
+    	    android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/string_tipo_hidrometro"
+            android:id="@+id/tvTipoHidrometroAbaRemoverHidr"/> 
+         <EditText
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+          	android:inputType="number"
+            android:id="@+id/tipoHidrometroAbaRemoverHidr"
+            android:enabled="false"
+            android:focusable="false"/>
+         
+         <TextView 
+    	    style="@style/label"
+    	    android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/string_numero_hidrometro"
+            android:id="@+id/tvNumeroHidrometroAbaRemoverHidr"/>
+         <EditText
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+          	android:inputType="number"
+            android:id="@+id/numeroHidrometroAbaRemoverHidr"
+            android:enabled="false"
+            android:focusable="false"/>
+         
+         <TextView 
+    	    style="@style/label"
+    	    android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/string_tipo_medicao"
+            android:id="@+id/tvTipoMedicaoAbaRemoverHidr"/>
+         <EditText
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+          	android:inputType="number"
+            android:id="@+id/tipoMedicaoAbaRemoverHidr"
+            android:enabled="false"
+            android:focusable="false"/>
+        
+         <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:paddingLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/string_local_instalacao"
+            android:id="@+id/tvLocalInstalacaoAbaRemoverHidr"/>
+         <Spinner 
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/localInstalacaoHidrSpinner"/>
+         
+         <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:paddingLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/string_protecao"
+            android:id="@+id/tvProtecaoHidrAbaRemoverHidr"/>
+         <Spinner 
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/protecaoHidrSpinner"/>
+      
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:gravity="center_vertical"
+          android:orientation="horizontal" >
+
+	      <TextView
+	          style="@style/label"
+	          android:layout_width="match_parent"
+	          android:layout_height="wrap_content"
+	          android:layout_marginBottom="5dp"
+	          android:gravity="left|center_vertical"
+	          android:paddingLeft="5dp"
+	          android:paddingRight="20dp"
+	          android:text="@string/string_cavalete"
+	          android:textSize="15sp"
+	          android:textStyle="bold" 
+	          android:id="@+id/tvIcCavaleteAbaRemoverHidr"/>
+	      
+	      <RadioGroup
+			android:id="@+id/icCavalete"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:gravity="center" 
+			android:orientation="horizontal"
+			>
+			
+			<RadioButton
+			    android:id="@+id/icCavaleteCom"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="left"
+			    android:gravity="left|center_vertical"
+			    android:paddingRight="15dp"
+			    android:text="@string/str_com" />
+			 
+			<RadioButton
+			    android:id="@+id/icCavaleteSem"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="left"
+			    android:checked="true"
+			    android:gravity="left|center_vertical"
+			    android:text="@string/str_sem" />
+ 
+		  </RadioGroup> 
+	  </LinearLayout>
+         
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:paddingLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/string_motivo_encerramento_fiscalizacao"/>
+         <Spinner 
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/motivoEncerramentoRemocaoHidr"/>
+         
+          <LinearLayout 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+	         <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textStyle="bold"
+	            android:paddingLeft="5dp"
+	            android:layout_marginBottom="5dp"
+	            android:text="@string/string_data_execucao_fiscalizacao"/>
+			<TextView
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:id="@+id/dataExecucaoFiscalizacao"/>
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+         <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:paddingLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/string_hora_execucao_fiscalizacao"/>
+         <TextView 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/horaExecucaoFiscalizacao"/>   
+        </LinearLayout> 
+         
+         <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:paddingLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/string_parecer_fiscalizacao"/>
+         <EditText
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:inputType="textMultiLine"
+             android:lines="4"
+             android:id="@+id/parecerFiscalizacao"/> 
+             
+         <Button 
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="3dp"
+             android:text="@string/string_botao_encerrar_os_fiscalizacao"
+             android:id="@+botao/encerrarOSFiscalizacao"/>
+    </LinearLayout>
+    
+</ScrollView>

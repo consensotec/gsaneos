@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		      android:orientation="vertical" android:gravity="center_horizontal" android:layout_width="fill_parent"
+		      android:layout_height="fill_parent" android:background="#000000">
+    
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" 
+    			  android:gravity="top" android:layout_weight="2">    
+		<ImageView android:layout_height="wrap_content" android:src="@drawable/toplogin" android:id="@+id/imgTopLogin" 
+				   android:layout_width="wrap_content" />
+	</LinearLayout>
+	
+	<LinearLayout android:orientation="vertical" android:layout_width="150px" 
+	    		  android:layout_height="wrap_content" 
+				  android:gravity="center_vertical" android:layout_weight="4">
+		<TextView style="@style/labelSmall" android:text="@string/str_login_user" />  
+  		<EditText android:layout_width="fill_parent" android:layout_marginBottom="10px" android:layout_height="wrap_content" 
+  				  android:id="@+id/edtLogin">
+  				  <requestFocus></requestFocus>
+	  	</EditText>
+		
+		<TextView style="@style/labelSmall" android:text="@string/str_login_pass" />  
+		<EditText android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/edtPassword" 
+				  android:password="true" />
+	
+		<Button android:text="@string/str_login_login" android:id="@+id/btnLogin" android:layout_width="wrap_content" 
+				android:layout_gravity="right" android:textColor="#ffffff" android:layout_height="wrap_content" 
+				android:background="@drawable/login_button"/>
+	</LinearLayout>
+	<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="bottom" android:layout_weight="2">
+		<ImageView android:layout_height="wrap_content" android:src="@drawable/bottomlogin" android:id="@+id/btLogin" android:layout_width="fill_parent"></ImageView>
+	</LinearLayout>	
+		
+</LinearLayout>

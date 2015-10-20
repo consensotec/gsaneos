@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		      android:orientation="vertical" android:gravity="left" android:layout_width="fill_parent"
+		      android:layout_height="fill_parent" android:background="#000000"
+		      android:paddingTop="5dp"
+		      android:paddingLeft="3dp"
+		      android:paddingRight="3dp">
+	
+    	<!-- CABEÇALHO INFORMAÇÕES INICIAIS -->
+    	<LinearLayout
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:gravity="center_vertical"
+    	    android:orientation="vertical" 
+    	    android:background="#808080">
+
+    		<TextView
+    		    style="@style/label"
+    		    android:layout_width="match_parent"
+    		    android:layout_height="match_parent"
+    		    android:gravity="center_vertical"
+    		    android:text="@string/str_informacoes_iniciais"
+    		    android:textSize="15sp"
+    		    android:textStyle="bold" 
+    		    android:paddingLeft="5dp"/>
+
+    	</LinearLayout>    
+    	
+    	<!-- CAMPOS INFORMAÇÕES INICIAIS -->
+    	<LinearLayout
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:gravity="center_vertical"
+    	    android:orientation="horizontal" android:layout_marginTop="5dp">
+    	    
+    	    <TextView
+    	        style="@style/label"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:paddingRight="4dp"
+    	        android:text="@string/label_inscricao"
+    	        android:textSize="15sp"
+    	        android:textStyle="bold" />
+    	    
+    	    <TextView
+			    style="@style/label"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:id="@+id/inscricao_dados_imovel"
+			   android:textSize="15sp"/>
+    	    
+    	</LinearLayout>
+    	
+    	<LinearLayout
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:gravity="center_vertical"
+    	    android:orientation="horizontal" android:layout_marginTop="5dp">
+    	    
+    	    <TextView
+			    style="@style/label"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="@string/label_matricula"
+			    android:paddingRight="4dp"
+			    android:textSize="15sp"
+			    android:textStyle="bold"/>
+    	    
+    	    <TextView
+			    style="@style/label"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:id="@+id/matricula_dados_imovel"
+			   android:textSize="15sp"/>
+    	    
+    	</LinearLayout>
+    	
+    	<LinearLayout
+    	    android:layout_width="match_parent"
+    	    android:layout_height="20dp"
+    	    android:gravity="center_vertical"
+    	    android:orientation="horizontal" android:layout_marginTop="5dp">
+    	    
+    	    <TextView
+			    style="@style/label"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="@string/label_perfil"
+			    android:paddingRight="4dp"
+			    android:textSize="15sp"
+			    android:textStyle="bold"/>
+    	    
+    	    <TextView
+			    style="@style/label"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:id="@+id/perfil_dados_imovel"
+			   android:textSize="15sp"/>
+    	    
+    	</LinearLayout>
+    	
+    	<LinearLayout
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:gravity="center_vertical"
+    	    android:orientation="horizontal" android:layout_marginTop="5dp">
+    	    
+    	    <TextView
+			    style="@style/label"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="@string/label_num_economias"
+			    android:paddingRight="4dp"
+			    android:textSize="15sp"
+			    android:textStyle="bold"/>
+    	    
+    	    <TextView
+			    style="@style/label"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:id="@+id/num_economias_dados_imovel"
+			   android:textSize="15sp"/>
+    	    
+    	</LinearLayout>
+    	
+    	<LinearLayout
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:gravity="center_vertical"
+    	    android:orientation="horizontal" android:layout_marginTop="5dp">
+    	    
+    	    <TextView
+			    style="@style/label"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="@string/label_categoria"
+			    android:paddingRight="4dp"
+			    android:textSize="15sp"
+			    android:textStyle="bold"/>
+    	    
+    	    <TextView
+			    style="@style/label"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:id="@+id/categoria_dados_imovel"
+			   android:textSize="15sp"/>
+    	    
+    	</LinearLayout>
+    	
+    	<LinearLayout
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:gravity="center_vertical"
+    	    android:orientation="horizontal"
+    	    android:paddingBottom="5dp"
+    	    android:layout_marginTop="5dp">
+    	    
+    	    <TextView
+			    style="@style/label"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="@string/label_grupo"
+			    android:paddingRight="4dp"
+			    android:textSize="15sp"
+			    android:textStyle="bold"/>
+    	    
+    	    <TextView
+			    style="@style/label"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:id="@+id/grupo_dados_imovel"
+			   android:textSize="15sp"/>
+    	    
+    	</LinearLayout>
+    	
+    	<!-- CABEÇALHO ENDERECO -->
+    	<LinearLayout
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:gravity="center_vertical"
+    	    android:orientation="vertical" 
+    	    android:background="#808080">
+
+    		<TextView
+    		    style="@style/label"
+    		    android:layout_width="match_parent"
+    		    android:layout_height="match_parent"
+    		    android:gravity="center_vertical"
+    		    android:text="@string/str_endereco"
+    		    android:textSize="15sp"
+    		    android:textStyle="bold" 
+    		    android:paddingLeft="5dp" android:layout_marginTop="5dp"/>
+
+    	</LinearLayout>   
+    	
+    	<LinearLayout
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:gravity="center_vertical"
+    	    android:orientation="horizontal"
+    	    android:paddingBottom="5dp">
+    	    
+    	    <TextView
+			    style="@style/label"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:id="@+id/endereco_dados_imovel"
+			    android:paddingRight="4dp"
+			    android:textSize="15sp" android:layout_marginTop="5dp"/>   	    
+    	 </LinearLayout>
+    	 
+    	<!-- CABEÇALHO LIGAÇÃO DE ÁGUA -->
+    	<LinearLayout
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:gravity="center_vertical"
+    	    android:orientation="vertical" 
+    	    android:background="#808080">
+
+    		<TextView
+    		    style="@style/label"
+    		    android:layout_width="match_parent"
+    		    android:layout_height="match_parent"
+    		    android:gravity="center_vertical"
+    		    android:text="@string/str_ligacao_agua"
+    		    android:textSize="15sp"
+    		    android:textStyle="bold" 
+    		    android:paddingLeft="5dp" android:layout_marginTop="5dp"/>
+
+    	</LinearLayout>
+    	
+    	<LinearLayout
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:gravity="center_vertical"
+    	    android:orientation="horizontal" android:layout_marginTop="5dp">
+    	    
+    	    <TextView
+			    style="@style/label"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="@string/label_situacao"
+			    android:paddingRight="4dp"
+			    android:textSize="15sp"
+			    android:textStyle="bold"/>
+    	    
+    	    <TextView
+			    style="@style/label"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:id="@+id/situacao_lig_agua_dados_imovel"
+			   android:textSize="15sp"/>
+    	    
+    	</LinearLayout>
+    	
+    	<LinearLayout
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:gravity="center_vertical"
+    	    android:orientation="horizontal"
+    	    android:paddingBottom="5dp" android:layout_marginTop="5dp">
+    	    
+    	    <TextView
+			    style="@style/label"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="@string/label_consumo_medio"
+			    android:paddingRight="4dp"
+			    android:textSize="15sp"
+			    android:textStyle="bold"/>
+    	    
+    	    <TextView
+			    style="@style/label"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:id="@+id/consumo_medio_dados_imovel"
+			   android:textSize="15sp"/>
+    	    
+    	</LinearLayout>
+    	
+    	<!-- CABEÇALHO LIGAÇÃO DE ESGOTO -->
+    	<LinearLayout
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:gravity="center_vertical"
+    	    android:orientation="vertical" 
+    	    android:background="#808080">
+
+    		<TextView
+    		    style="@style/label"
+    		    android:layout_width="match_parent"
+    		    android:layout_height="match_parent"
+    		    android:gravity="center_vertical"
+    		    android:text="@string/str_ligacao_esgoto"
+    		    android:textSize="15sp"
+    		    android:textStyle="bold" 
+    		    android:paddingLeft="5dp" android:layout_marginTop="5dp"/>
+
+    	</LinearLayout>
+    	
+    	<LinearLayout
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:gravity="center_vertical"
+    	    android:orientation="horizontal"
+    	    android:paddingBottom="5dp" android:layout_marginTop="5dp">
+    	    
+    	    <TextView
+			    style="@style/label"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="@string/label_situacao"
+			    android:paddingRight="4dp"
+			    android:textSize="15sp"
+			    android:textStyle="bold"/>
+    	    
+    	    <TextView
+			    style="@style/label"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:id="@+id/situacao_lig_esgoto_dados_imovel"
+			   android:textSize="15sp"/>
+    	    
+    	</LinearLayout>
+    	
+    	<!-- CABEÇALHO HIDRÔMETRO -->
+    	<LinearLayout
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:gravity="center_vertical"
+    	    android:orientation="vertical" 
+    	    android:background="#808080">
+
+    		<TextView
+    		    style="@style/label"
+    		    android:layout_width="match_parent"
+    		    android:layout_height="match_parent"
+    		    android:gravity="center_vertical"
+    		    android:text="@string/str_hidrometro"
+    		    android:textSize="15sp"
+    		    android:textStyle="bold" 
+    		    android:paddingLeft="5dp"/>
+
+    	</LinearLayout>
+    	
+    	
+    	<LinearLayout
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:gravity="center_vertical"
+    	    android:orientation="horizontal" android:layout_marginTop="5dp">
+    	    
+    	    <TextView
+			    style="@style/label"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="@string/label_numero"
+			    android:paddingRight="4dp"
+			    android:textSize="15sp"
+			    android:textStyle="bold"/>
+    	    
+    	    <TextView
+			    style="@style/label"
+			    android:layout_width="113dp"
+			    android:layout_height="wrap_content"
+			    android:id="@+id/numero_dados_imovel"
+			   android:textSize="15sp"/>
+    	    
+    	    
+    	    <TextView
+			    style="@style/label"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="@string/label_marca"
+			    android:paddingRight="4dp"
+			    android:textSize="15sp"
+			    android:gravity="right"
+			    android:textStyle="bold"/>
+    	    
+    	    <TextView
+			    style="@style/label"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:id="@+id/marca_dados_imovel"
+			    android:gravity="right"
+			   android:textSize="15sp"/>
+    	    
+    	</LinearLayout>
+    	
+    	
+    	<LinearLayout
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:gravity="center_vertical"
+    	    android:orientation="horizontal" android:layout_marginTop="5dp">
+    	    
+    	    <TextView
+			    style="@style/label"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="@string/label_local_inst"
+			    android:paddingRight="4dp"
+			    android:textSize="15sp"
+			    android:textStyle="bold"/>
+    	    
+    	    <TextView
+			    style="@style/label"
+			    android:layout_width="100dp"
+			    android:layout_height="wrap_content"
+			    android:id="@+id/local_inst_dados_imovel"
+			   android:textSize="15sp"/>
+    	    
+    	</LinearLayout>
+    	
+    	<LinearLayout
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:gravity="center_vertical"
+    	    android:orientation="horizontal" android:layout_marginTop="5dp">
+    	
+    	     <TextView
+			    style="@style/label"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="@string/label_protecao"
+			    android:paddingRight="4dp"
+			    android:textSize="15sp"
+			    android:gravity="right"
+			    android:textStyle="bold"/>
+    	    
+    	    <TextView
+			    style="@style/label"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:id="@+id/protecao_dados_imovel"
+			    android:gravity="right"
+			   android:textSize="15sp"/>
+    	    
+    	</LinearLayout>	
+    	
+    	<LinearLayout
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:gravity="center_vertical"
+    	    android:orientation="horizontal"
+    	    android:paddingTop="10dp"
+    	    android:paddingBottom="5dp" android:layout_marginTop="5dp">
+    	    
+    	    <TextView
+			    style="@style/label"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="@string/label_ultima_alteracao"
+			    android:paddingRight="4dp"
+			    android:textSize="15sp"
+			    android:textStyle="bold"/>
+    	    
+    	    <TextView
+			    style="@style/label"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:id="@+id/ultima_alteracao_dados_imovel"
+			   android:textSize="15sp"/>
+    	    
+    	</LinearLayout>
+     	
+</LinearLayout>

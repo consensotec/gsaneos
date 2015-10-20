@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:orientation="vertical">
+   	 
+         <TextView 
+    	    style="@style/label"
+    	    android:id="@+id/tipoHidrometroTextCaixa"
+    	    android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/string_tipo_hidrometro"/>
+          <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+          	android:inputType="number"
+            android:id="@+id/tipoHidrometroInstalacaoCaixaProtecao"/>
+          
+          <TextView 
+    	    style="@style/label"
+    	    android:id="@+id/numeroHidrometroTextCaixa"
+    	    android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/string_numero_hidrometro"/>
+         
+          <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+          	android:inputType="text"
+            android:id="@+id/numeroHidrometroInstalacaoCaixaProtecao"/>
+          
+          <TextView 
+    	    style="@style/label"
+    	    android:id="@+id/tipoMedicaoTextCaixa"
+    	    android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/string_tipo_medicao"/>
+          
+          <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+          	android:inputType="number"
+            android:id="@+id/tipoMedicaoInstalacaoCaixaProtecao"/>
+          
+          <TextView 
+    	    style="@style/label"
+    	    android:id="@+id/localInstalacaoTextCaixa"
+    	    android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/string_local_instalacao"/>
+          
+          <Spinner 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hidrometroLocalInstalacaoCaixaProtecao"/>
+          
+          <TextView 
+    	    style="@style/label"
+    	    android:id="@+id/protecaoTextCaixa"
+    	    android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/string_protecao"/>
+          
+          <Spinner 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hidrometroProtecaoInstalacaoCaixaProtecao"/>
+          
+          <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:paddingTop="5dp"
+	        android:paddingLeft="3dp"
+	        android:orientation="horizontal">
+	        
+              <TextView 
+	    	    style="@style/label"
+	    	    android:id="@+id/tipoProtecaoTextCaixa"
+	    	    android:textSize="15sp"
+            	android:textStyle="bold"
+	    	    android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:paddingTop="15dp"
+	            android:paddingLeft="5dp"
+	            android:layout_marginBottom="5dp"
+	            android:text="@string/string_troca_protecao"/>
+              
+		        <RadioGroup
+		            android:id="@+id/grupoTrocaProtecao"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:orientation="horizontal"
+		            android:paddingLeft="44dp" >
+			 
+			        <RadioButton
+			            android:id="@+id/simTrocaProtecao"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="@string/str_sim"/>
+			 
+			        <RadioButton
+			            android:id="@+id/naoTrocaProtecao"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="@string/str_nao"
+						android:checked="true"/>
+		 
+		   		 </RadioGroup>
+              
+          </LinearLayout>
+          
+          <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:paddingTop="5dp"
+	        android:paddingLeft="3dp"
+	        android:orientation="horizontal">
+	        
+              <TextView 
+	    	    style="@style/label"
+	    	    android:id="@+id/tipoTrocaRegistro"
+	    	    android:textSize="15sp"
+            	android:textStyle="bold"
+	    	    android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:paddingTop="15dp"
+	            android:paddingLeft="5dp"
+	            android:layout_marginBottom="5dp"
+	            android:text="@string/string_troca_registro"/>
+              
+		        <RadioGroup
+		            android:id="@+id/grupoTrocaRegistro"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:paddingLeft="27dp"
+		            android:orientation="horizontal">
+			 
+			        <RadioButton
+			            android:id="@+id/simTrocaRegistro"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="@string/str_sim"/>
+			 
+			        <RadioButton
+			            android:id="@+id/naoTrocaRegistro"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="@string/str_nao"
+						android:checked="true"/>
+		 
+		   		 </RadioGroup>
+              
+          </LinearLayout>
+          
+          <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:paddingTop="5dp"
+	        android:paddingLeft="3dp"
+	        android:orientation="horizontal">
+	        
+              <TextView 
+	    	    style="@style/label"
+	    	    android:id="@+id/caveleteTextCaixa"
+	    	    android:textSize="15sp"
+            	android:textStyle="bold"
+	    	    android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:paddingTop="15dp"
+	            android:paddingLeft="10dp"
+	            android:layout_marginBottom="5dp"
+	            android:text="@string/string_cavalete"/>
+
+              <RadioGroup
+                  android:id="@+id/grupoCavalete"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:paddingLeft="87dp" >
+
+                  <RadioButton
+                      android:id="@+id/comCavalete"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/string_com" />
+
+                  <RadioButton
+                      android:id="@+id/semCavalete"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/string_sem" />
+              </RadioGroup>
+              
+          </LinearLayout>
+          
+          <TextView 
+    	    style="@style/label"
+    	    android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/string_motivo_encerramento"/>
+          
+          <Spinner 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/atendimentoMotivoEncerramentoInstalacaoCaixaProtecao"/>
+          
+          <LinearLayout 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+	         <TextView 
+	    	    style="@style/label"
+	    	    android:textSize="15sp"
+	            android:textStyle="bold"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:paddingLeft="5dp"
+	            android:layout_marginBottom="5dp"
+	            android:text="@string/string_data_execucao"/>
+			<TextView
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:id="@+id/dataExecucaoInstalacaoCaixaProtecao"/>
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+         <TextView 
+    	    style="@style/label"
+    	    android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/string_hora_execucao"/>
+         <TextView 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/horaExecucaoInstalacaoCaixaProtecao"/>   
+        </LinearLayout> 
+         
+         <TextView 
+    	    style="@style/label"
+    	    android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/string_parecer_corte"/>
+         <EditText
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:inputType="textMultiLine"
+             android:lines="4"
+             android:id="@+id/parecerInstalacaoCaixaProtecao"/> 
+             
+         <Button 
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="3dp"
+             android:text="@string/string_botao_encerrar_os_corte"
+             android:id="@+botao/encerrarOSInstalacaoCaixaProtecao"/>
+   	 
+   	 </LinearLayout>
+</ScrollView>

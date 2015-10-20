@@ -1,0 +1,205 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.ipad.gsaneos.ui"
+    android:versionCode="22090"
+    android:versionName="2.2.09.0"
+    android:debuggable="true">
+    
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.ACESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.GET_TASKS" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="8" />
+
+    <application android:name="br.com.ipad.gsaneos.bean.Gsaneos" android:icon="@drawable/gsan_logo" android:label="@string/app_name" >
+
+        
+         <activity android:name="br.com.ipad.gsaneos.ui.ApkActivity" 
+            android:screenOrientation="portrait">
+            <intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />                               
+            </intent-filter>
+        </activity>
+        
+        <activity 
+             android:name="br.com.ipad.gsaneos.ui.DownloadApkActivity" 
+             android:screenOrientation="portrait">
+            <intent-filter>
+                 <action android:name="android.intent.action.DEFAULT" />
+				<category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="DownloadArquivoActivity"
+			android:screenOrientation="portrait">
+			<intent-filter>
+				<action android:name="android.intent.action.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+        
+        <activity android:name="SelecionarArquivoActivity"
+            	  android:label="@string/nomeAplicacao"
+				  android:screenOrientation="portrait">
+			<intent-filter>
+			    <action android:name="android.intent.action.DEFAULT" />
+				<category android:name="android.intent.category.DEFAULT" /> 
+			</intent-filter>
+		</activity>
+		
+         <activity android:name="LoginActivity"
+             	   android:label="@string/nomeAplicacao"
+				   android:screenOrientation="portrait">
+			<intent-filter>
+				<action android:name="android.intent.action.DEFAULT" />
+				<category android:name="android.intent.category.DEFAULT" /> 
+			</intent-filter>
+		</activity>
+		<!--
+			[UC1496] - Apresentar Roteiro para Execução de OS de Cobrança.
+		  	@author Jonathan Marcos
+		  	@date 14/06/2013
+		 -->
+		<activity android:name="br.com.ipad.gsaneos.ui.ApresentarRoteirosActivity"
+		    	  android:screenOrientation="portrait"
+		    	  android:label="@string/nomeAplicacao">
+		    <intent-filter>
+		        <action android:name="android.intent.action.DEFAULT"/>
+		        <category android:name="android.intent.category.DEFAULT"/>
+		        
+		    </intent-filter>
+		    
+		</activity>
+       <activity android:name="ApresentarRoteiroTabsActivity"
+			android:screenOrientation="portrait">
+			<intent-filter>
+				<action android:name="android.intent.action.DEFAULT" />
+				<category android:name="android.intent.category.DEFAULT" /> 
+			</intent-filter>
+		</activity> 
+         
+         <activity android:name="ApresentarDadosImovelActivity"
+			android:screenOrientation="portrait">
+			<intent-filter>			    	
+				<action android:name="android.intent.action.DEFAULT" />
+				<category android:name="android.intent.category.DEFAULT" /> 
+			</intent-filter>
+		</activity> 
+		
+          <activity android:name="ManterDadosAbaClienteActivity"
+			android:screenOrientation="portrait">
+			<intent-filter>		
+				<action android:name="android.intent.action.DEFAULT" />
+				<category android:name="android.intent.category.DEFAULT" /> 
+			</intent-filter>
+		</activity> 
+		
+         <activity android:name="ApresentarDadosAbaDebitosActivity"
+			android:screenOrientation="portrait">
+			<intent-filter>			    	
+				<action android:name="android.intent.action.DEFAULT" />
+				<category android:name="android.intent.category.DEFAULT" /> 
+			</intent-filter>
+		</activity> 
+		
+        <activity android:name="ManterDadosAbaCorteActivity"
+			android:screenOrientation="portrait">
+			<intent-filter>		
+				<action android:name="android.intent.action.DEFAULT" />
+				<category android:name="android.intent.category.DEFAULT" /> 
+			</intent-filter>
+		</activity>
+		
+        <activity android:name="ManterDadosAbaRestabelecimentoActivity"
+			android:screenOrientation="portrait">
+			<intent-filter>		
+				<action android:name="android.intent.action.DEFAULT" />
+				<category android:name="android.intent.category.DEFAULT" /> 
+			</intent-filter>
+		</activity>
+		
+        <activity android:name="ManterDadosAbaSupressaoActivity"
+			android:screenOrientation="portrait">
+			<intent-filter>		
+				<action android:name="android.intent.action.DEFAULT" />
+				<category android:name="android.intent.category.DEFAULT" /> 
+			</intent-filter>
+		</activity>
+		
+        <activity android:name="ManterDadosAbaReligacaoActivity"
+			android:screenOrientation="portrait">
+			<intent-filter>		
+				<action android:name="android.intent.action.DEFAULT" />
+				<category android:name="android.intent.category.DEFAULT" /> 
+			</intent-filter>
+		</activity>
+		
+        <activity android:name="ManterDadosAbaFiscalizacaoActivity"
+			android:screenOrientation="portrait">
+			<intent-filter>		
+				<action android:name="android.intent.action.DEFAULT" />
+				<category android:name="android.intent.category.DEFAULT" /> 
+			</intent-filter>
+		</activity>
+		
+         <activity android:name="ManterDadosAbaRemocaoHidrometroActivity"
+			android:screenOrientation="portrait">
+			<intent-filter>		
+				<action android:name="android.intent.action.DEFAULT" />
+				<category android:name="android.intent.category.DEFAULT" /> 
+			</intent-filter>
+		</activity>
+		
+        <activity android:name="RegistrarFotosActivity"
+			android:screenOrientation="portrait">
+			<intent-filter>		
+				<action android:name="android.intent.action.DEFAULT" />
+				<category android:name="android.intent.category.DEFAULT" /> 
+			</intent-filter>
+		</activity>
+		
+         <activity android:name="FinalizarRoteiroOSCobrancaActivity"
+			android:screenOrientation="portrait">
+			<intent-filter>		
+				<action android:name="android.intent.action.DEFAULT" />
+				<category android:name="android.intent.category.DEFAULT" /> 
+			</intent-filter>
+		</activity>
+		
+         <activity android:name="TransmitirOnlineOSCobrancaAsyncActivity"
+			android:screenOrientation="portrait">
+			<intent-filter>		
+				<action android:name="android.intent.action.DEFAULT" />
+				<category android:name="android.intent.category.DEFAULT" /> 
+			</intent-filter>
+		</activity>
+		
+         <activity android:name="ManterDadosAbaSubstituicaoHidrometroActivity"
+			android:screenOrientation="portrait">
+			<intent-filter>		
+				<action android:name="android.intent.action.DEFAULT" />
+				<category android:name="android.intent.category.DEFAULT" /> 
+			</intent-filter>
+		</activity>
+		
+         <activity android:name="ManterDadosAbaInstalacaoCaixaProtecao"
+			android:screenOrientation="portrait">
+			<intent-filter>		
+				<action android:name="android.intent.action.DEFAULT" />
+				<category android:name="android.intent.category.DEFAULT" /> 
+			</intent-filter>
+		</activity>
+		
+         
+        
+    </application>
+
+</manifest>
